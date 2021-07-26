@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  	<arg name="world_name" value="$(find week5)/worlds/landmarks.world"/>
+  </include>
+
+  <include file="$(find kobuki_gazebo)/launch/includes/robot.launch.xml"/>
+
+  <node name="trilateration" pkg="week5" type="trilateration.py" output="screen"/>
+  <node name="manual_odometry" pkg="week5" type="manual_odom.py" output="screen"/>
+</launch>
+

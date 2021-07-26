@@ -1,0 +1,5 @@
+<launch>
+    <node name="name" pkg="week1_190100051_190110043" type="name.py" output="screen"/>
+    <node name="roll" pkg="week1_190100051_190110043" type="roll.py" output="screen"/>
+    <node name="student_data" pkg="week1_190100051_190110043" type="student.py" output="screen"/>
+</launch>
